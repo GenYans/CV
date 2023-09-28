@@ -1,0 +1,38 @@
+.skills {
+    margin-top: 40px;
+    height: 400px;
+    border-bottom: 1px solid #3024b51d;
+    &-about {
+        &-title {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        &-descr {
+            margin-top: 10px;
+        }
+        &-logo {
+            margin-top: 100px;
+        }
+    }
+    &-wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 370px 800px;
+        grid-template-rows: 290px;
+    }
+    &-programm {
+        margin-left: 30px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 370px);
+        grid-template-rows: repeat(2, 100px);
+        &-block {
+            border-bottom: 1px solid #3024b51d;;
+        }
+        &-title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+

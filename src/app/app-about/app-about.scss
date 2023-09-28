@@ -1,3 +1,51 @@
-.about-me {
+.about {
     margin-top: 40px;
+    border-bottom: 1px solid #3024b51d;
+    .row {
+        display: grid;
+        grid-template-columns: 300px 600px;
+        justify-content: center; 
+        margin-bottom: 40px;
+    }
+    .about-me {
+        margin-left: 50px;
+    }
+}
+
+
+h1 {
+    font-size: 36px;
+    margin: 0 0 15px 0;
+}
+
+
+.about-btn {
+    display: inline-flex;
+    margin-top: 20px;
+    button:hover {
+        box-shadow: 9px 8px 10px 0px rgba(0, 0, 0, 0.115);
+        transition-duration: 0.8s;
+    }
+    &-contact, &-download {
+        display: flex;
+        min-width: 170px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        background: #2F24B5;
+        border: 0;
+        font-size: 12px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &-download {
+        background: #EFEFEF;
+        color: black;
+        border: 0;
+        text-transform: uppercase;
+        margin-left: 30px;
+        cursor: pointer;
+    }
 }

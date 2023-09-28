@@ -33,3 +33,14 @@
         }
     }
 }
+.about-social {
+    display: grid;
+    grid-template-columns: 90px 800px;
+    grid-template-rows: repeat(4, 38px);
+    &-title {
+        font-weight: 600;
+    }
+    &-icon {
+        margin-right: 15px;
+    }
+}
