@@ -4,9 +4,16 @@ import Experience from '../../resources/icons/experience.svg'
 
 const AppExperience = () => {
     return(
-       <section className="experience">
+       <section id='experience' className="experience">
             <div className="container">
                 <div className="experience-wrapper">
+                <div className="experience-about">
+                        <div className="experience-about-title">Опыт</div>
+                        <div className="experience-about-descr">Я переучился на front-end разработчика в ходе работы в инженерно-строительной сфере.Хоть у меня нет прямого опыта работы в IT-отрасли, я приобрел опыт работы с программами для моделирования и визуализации, что помогло мне лучше понять, как создавать функциональные и эстетически приятные интерфейсы.</div>
+                        <div className="experience-about-logo">
+                            <img src={Experience} alt="bulb" />
+                        </div>
+                    </div>
                     <div className="experience-studies">
                         <div className="experience-studies-block">
                             <div id='studies-title-1' className="experience-studies-title">Web Developer<span>Coolor Studio</span></div>
@@ -24,13 +31,6 @@ const AppExperience = () => {
                             <div id='studies-title-3' className="experience-studies-title">IT Specialist<span>Motion Studio</span></div>
                             <div className="experience-studies-data">Dec, 2009 — Jan, 2013</div>
                             <div className="experience-studies-descr">Revamped web application security applications, minimizing hacker attacks from 2.3% to 0.02%.</div>
-                        </div>
-                    </div>
-                    <div className="experience-about">
-                        <div className="experience-about-title">Опыт</div>
-                        <div className="experience-about-descr">Я переучился на front-end разработчика в ходе работы в инженерно-строительной сфере.Хоть у меня нет прямого опыта работы в IT-отрасли, я приобрел опыт работы с программами для моделирования и визуализации, что помогло мне лучше понять, как создавать функциональные и эстетически приятные интерфейсы.</div>
-                        <div className="experience-about-logo">
-                            <img src={Experience} alt="bulb" />
                         </div>
                     </div>
                 </div>
