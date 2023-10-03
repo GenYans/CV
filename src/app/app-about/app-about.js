@@ -6,7 +6,6 @@ import Facebook from '../../resources/icons/facebook.svg'
 import Man from '../../resources/img/man.png'
 
 
-
 const AppAbout = () => {
     return(
         <section id='hello' className='about'>
@@ -36,7 +35,7 @@ const AppAbout = () => {
                             <p className="about-social-title">Social</p>
                             <p className="about-social-subtitle">
                                 <span>
-                                    <a href="/"><img className='about-social-icon' src={Git} alt="git" /></a>
+                                    <a href="https://github.com/GenYans"><img className='about-social-icon' src={Git} alt="git" /></a>
                                     <a href="/"><img className='about-social-icon' src={Inst} alt="instagramm" /></a>
                                     <a href="/"><img className='about-social-icon' src={Facebook} alt="facebook" /></a>
                                 </span>

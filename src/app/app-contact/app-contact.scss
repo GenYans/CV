@@ -1,12 +1,32 @@
 .contact {
+    margin-top: 40px;
     min-height: 290px;
     &-about {
+        &-descr {
+            margin-top: 10px;
+        }
         &-title {
             font-size: 30px;
             font-weight: 700;
         }
     }
-    margin-top: 10px;
+    &-block {
+        display: flex;
+        width: 100%;
+        &-btn, &-logo {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &-logo {
+            justify-content: flex-start;
+            width: 40px;
+            height: 40px;
+        }
+        &-btn button:hover {
+            box-shadow: 9px 8px 10px 0px rgba(0, 0, 0, 0.115);
+            transition-duration: 0.8s;
+        }
+    }
     &-wrapper {
         display: grid;
         justify-content: center;
@@ -17,15 +37,23 @@
         display: grid;
         grid-template-columns: 289px 500px;
         grid-template-rows: 50px 130px;
-        input {
+        input, textarea {
             display: flex;
             border-radius: 2px;
             border: 1px solid #E3E3E3;
             background: #FFF;
             padding-left: 16px;
         }
-        input:focus {
+        textarea {
+            padding-top: 16px;
+            height: 118px;
+            max-width: 431px;
+            font-family: 'Lato';
+            resize: none;
+        }
+        input, textarea:focus {
             outline-color: #3024b5;
+            outline-width: thin;
         }
         &-name, &-email {
             height: 50px;
@@ -44,10 +72,34 @@
 
 .footer {
     margin-top: 30px;
-    background: #efefef;
+    background: #3024b5;
     padding: 15px 0px;
     text-align: center;
-    .copyright {
-        font-size: 14px;
+    color: white;
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 135px auto auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-list, &-social {
+        display: flex;
+        list-style-type: none;
+        &-item {
+            color: white;
+            margin-right: 15px;
+        }
+    }
+    ul a {
+        text-decoration: none;
+    } 
+    &-language {
+        button {
+            background-color: #3024b5;
+            border: none;
+            color: white;
+            width: 30px;
+            cursor: pointer;
+        }  
     }
 }

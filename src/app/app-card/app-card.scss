@@ -1,0 +1,18 @@
+.cards-list {
+    a {
+        z-index: 10;
+    }
+    a:hover {
+        transition: 0.5s;
+        text-decoration: underline;
+        color: #2F24B5;
+    }
+    &-block {
+        text-decoration: none;
+        color: black;
+        &-name {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
