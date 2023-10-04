@@ -4,7 +4,7 @@ import AppCard from '../app-card/app-card';
 
 const AppCards = () => {
     return(
-        <section className="cards">
+        <section id='portfolio' className="cards">
             <div className="container">
                 <div className="cards-wrapper">
                     <div className="cards-title">Портфолио</div>

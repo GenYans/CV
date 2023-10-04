@@ -20,6 +20,14 @@
             color: #2F24B5;
             text-decoration: underline;
         }
+        &-logo {
+            fill: black;
+            padding-right: 15px;
+        }
+        &-logo:hover {
+            transition: 0.5s;
+            fill: #2F24B5;
+        }
     }
 }
 

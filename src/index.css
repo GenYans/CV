@@ -10,6 +10,12 @@ code {
     monospace;
 }
 
+svg path {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+}
+
 .container {
     margin: 0 auto;
     width: 1200px;

@@ -54,7 +54,6 @@ const AppContact = () => {
                     </div>
                 </div>
             </footer>
-
        </section>
     )
 };

@@ -6,6 +6,7 @@
     height: 85px;
     border-bottom: 1px solid #3024b51d;
     &-menu-logo {
+        cursor: pointer;
         display: inline-flex;   
         position: absolute;
         margin-top: 25px;
@@ -32,6 +33,7 @@
             font-size: 12px;
         }
         a:hover {
+            transition: 0.5s;
             text-decoration: underline;
             color: #3024b5;
         }

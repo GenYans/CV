@@ -1,30 +1,104 @@
 import '../app-header/app-header.scss';
 
+import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import Logo from '../../resources/icons/logo.svg';
 
+export default class Navbar extends Component {
+    scrollToTop = () => {
+      scroll.scrollToTop();
+    };
 
-const AppHeader = () => {
+render() {
     return(
-        <header className="header">
-            <div className="container">
-                <div className="row">
-                    <div className="header-menu">
-                        <nav className="main-menu">
-                            <div className='header-menu-logo'><a href="/"><img src={Logo} alt="logo" /></a></div>
-                        <ul className="list-inline">
-                            <li className='list-inline-item'><a href="#hello">Привет</a></li>
-                            <li className='list-inline-item'><a href="#skills">Стэк</a></li>
-                            <li className='list-inline-item'><a href="#experience">Опыт</a></li>
-                            <li className='list-inline-item'><a href="#education">Образование</a></li>
-                            <li className='list-inline-item'><a href="#portfolio">Портфолио</a></li>
-                            <li className='list-inline-item'><a href="#contact">Контакты</a></li>
-                        </ul>
-                </nav>
+            <header className="header">
+                <div className="container">
+                    <div className="row">
+                        <div className="header-menu">
+                            <nav className="main-menu">
+                                <div className='header-menu-logo'>
+                                <img
+                                    src={Logo}
+                                    className="nav-logo"
+                                    alt="Logo"
+                                    onClick={this.scrollToTop}
+                                />
+                                </div>
+                            <ul className="list-inline">
+                                <li className='list-inline-item'>
+                                    <Link 
+                                        activeClass='active'
+                                        to="hello"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-125}
+                                        duration={500}
+                                    >
+                                    Привет
+                                    </Link>
+                                </li>
+                                <li className='list-inline-item'>
+                                    <Link 
+                                    to="skills"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-125}
+                                    duration={500}
+                                    >
+                                    Стэк
+                                    </Link>
+                                </li>
+                                <li className='list-inline-item'>
+                                    <Link 
+                                    to="experience"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-125}
+                                    duration={500}
+                                    >
+                                    Опыт
+                                    </Link>
+                                </li>
+                                <li className='list-inline-item'>
+                                    <Link 
+                                    to="education"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-125}
+                                    duration={500}
+                                    >
+                                    Образование
+                                    </Link>
+                                </li>
+                                <li className='list-inline-item'>
+                                    <Link
+                                    to="portfolio"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-125}
+                                    duration={500}
+                                    >
+                                    Портфолио
+                                    </Link>
+                                </li>
+                                <li className='list-inline-item'>
+                                    <Link 
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-125}
+                                    duration={500}
+                                    >
+                                    Контакты
+                                    </Link>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
-    )
-};
-
-export default AppHeader;
+        </header>
+        )
+    }
+}
