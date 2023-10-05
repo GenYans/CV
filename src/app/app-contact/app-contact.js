@@ -37,7 +37,7 @@ const AppContact = () => {
             <footer class="footer">
                 <div class="container">
                     <div class="footer-wrapper">
-                        <img className='footer-logo' src={LogoWhite} alt="LogoWhite" />
+                        <a href="/"><img className='footer-logo' src={LogoWhite} alt="LogoWhite" /></a>
                         <ul className="footer-list">
                             <a href="/"><li className="footer-list-item">Конфиденциальность</li></a>
                             <a href="/"><li className="footer-list-item">Copyright 2023 Gennady Yanelis</li></a>

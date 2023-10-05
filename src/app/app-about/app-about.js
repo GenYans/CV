@@ -1,9 +1,13 @@
 import '../app-about/app-about.scss'
 
+import React, {useState} from 'react';
+
 import Man from '../../resources/img/man.png'
+import AppModalContact from '../app-modal-contact/app-modal-contact';
 
 
 const AppAbout = () => {
+    const [modalActive, setModalActive] = useState(false);
     return(
         <section id='hello' className='about'>
             <div className="container">
@@ -49,9 +53,30 @@ const AppAbout = () => {
                         </div>
                         
                         <div className="about-btn">
-                            <button className='about-btn-contact'>связаться со мной</button>
+                            <button className='about-btn-contact' onClick={() => setModalActive(true)}>связаться со мной</button>
                             <button className='about-btn-download'>скачать резюме</button>
                         </div>
+                        <AppModalContact active={modalActive} setActive={setModalActive}>
+                            <div className="modal-block">
+                                <h1>Let’s work together</h1>
+                                <p>Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.</p>
+                            </div>
+                            <div className="modal-wrapper">
+                                <div className="contact-form">
+                                    <div className="contact-form-block">
+                                        <input className='contact-form-name' type="text" placeholder="Имя"/>
+                                        <input className='contact-form-email' type="text" placeholder="E-mail"/>
+                                    </div>
+                                    <div className="contact-form-block">
+                                        <textarea class="contact-form-message" placeholder="Сообщение" required=""></textarea>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div className="modal-btn">
+                                <button className='about-btn-contact'>отправить сообщение</button>  
+                                <button className='modal-btn-contact'>вернуться к резюме</button> 
+                            </div>
+                        </AppModalContact>
                     </div>
                     </div>
                 </div>

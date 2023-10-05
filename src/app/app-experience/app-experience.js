@@ -16,21 +16,28 @@ const AppExperience = () => {
                     </div>
                     <div className="experience-studies">
                         <div className="experience-studies-block">
-                            <div id='studies-title-1' className="experience-studies-title">Web Developer<span>Coolor Studio</span></div>
-                            <div className="experience-studies-data">May, 2014 — Present</div>
-                            <div className="experience-studies-descr">Designed and developed user-friendly website, including optimized check-out page that increased user
-                            clicks, and subsequently customer purchases by 20%.</div>
+                            <div id='studies-title-1' className="experience-studies-title">Инженер ПТО<span>ООО "НЭНСИ"
+                            </span></div>
+                            <div className="experience-studies-data">Сентябрь, 2019 — Май, 2021</div>
+                            <div className="experience-studies-descr">
+                                <ul className="experience-studies-item">
+                                    <li>Рассмотрение и согласование проектных решений возникающих в ходе проектирования объекта;</li>
+                                    <li>Подготовка, ведение и сдача в производство эскизных и рабочих чертежей изделий
+                                различной степени сложности при вводе заказа.</li>
+                                    <li>Создание фотораскроев и визуализаций проектов из натурального камня;</li>
+                                    <li>Подготовка необходимых документов для Заказчика, монтажного отдела, Отдела продаж и
+                                производства;</li>
+                                    <li>Расчёт объемов;</li>
+                                    <li>Участие в решении вопросов о внесении в проект изменений и дополнений;</li>
+                                    <li>Ведение документации, необходимой для сдачи заказа</li>
+                                </ul>
+                            </div>
                         </div>
                         <div className="experience-studies-block">
-                            <div id='studies-title-2' className="experience-studies-title">Middle Frontend Developer<span>Illskill Agency</span></div>
-                            <div className="experience-studies-data">Jan, 2013 — May, 2014</div>
-                            <div className="experience-studies-descr">Leading a small team on a variety of development projects and delivering solutions to meet and exceed
-                            clients’ briefs.</div>
-                        </div>
-                        <div className="experience-studies-block">
-                            <div id='studies-title-3' className="experience-studies-title">IT Specialist<span>Motion Studio</span></div>
-                            <div className="experience-studies-data">Dec, 2009 — Jan, 2013</div>
-                            <div className="experience-studies-descr">Revamped web application security applications, minimizing hacker attacks from 2.3% to 0.02%.</div>
+                            <div id='studies-title-2' className="experience-studies-title">Ведущий специалист<span>ЛО ГУП «Недвижимость»</span></div>
+                            <div className="experience-studies-data">Май 2021 — настоящее время</div>
+                            <div className="experience-studies-descr">Ленинградское областное государственное унитарное предприятие технической инвентаризации и оценки недвижимости
+                            </div>
                         </div>
                     </div>
                 </div>

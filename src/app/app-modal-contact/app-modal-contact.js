@@ -1,11 +1,12 @@
 import '../app-modal-contact/app-modal-contact.scss'
 
 
-const AppModalContact = ({active, setActive}) => {
+const AppModalContact = ({active, setActive, children}) => {
     return(
-        <div className={active ? "modal active" : "modal-contact" } onClick={() => setActive(false)}>
-            <div className="modal-contact-wrapper" onClick={e => e.stopPropagation()}>
-                </div>
+        <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
+            <div className={active ? "modal-content active" : "modal"} onClick={e => e.stopPropagation()}>
+                {children}
+            </div>
         </div>
     )
 };

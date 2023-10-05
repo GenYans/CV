@@ -1,8 +1,20 @@
 import '../app-cards/app-cards.scss'
 
+import { useState } from 'react';
+
+import data from '../../data';
+
 import AppCard from '../app-card/app-card';
 
+
 const AppCards = () => {
+
+    const [card] = useState(data);
+
+    const products = card.map((product) => {
+        return <AppCard product={product} key={product.id}/>
+    }) 
+
     return(
         <section id='portfolio' className="cards">
             <div className="container">
@@ -18,14 +30,7 @@ const AppCards = () => {
                         <li className="cards-menu-list"><a href="/">Shopify</a></li>
                     </ul>
                     <div className="cards-portfolio">
-                        <AppCard/>
-                        <AppCard/>
-                        <AppCard/>
-                        <AppCard/>
-                        <AppCard/>
-                        <AppCard/>
-                        <AppCard/>
-                        <AppCard/>
+                        {products}
                     </div>
                 </div>
             </div>

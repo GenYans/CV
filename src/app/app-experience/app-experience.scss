@@ -1,6 +1,6 @@
 .experience {
     margin-top: 40px;
-    min-height: 400px;
+    min-height: 430px;
     border-bottom: 1px solid #3024b51d;
     &-about {
         &-logo {
@@ -18,7 +18,7 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 400px 800px;
-        grid-template-rows: 290px;
+        grid-template-rows: 400px;
     }
     &-studies {
         margin-left: 30px;
@@ -34,6 +34,10 @@
         &-descr {
             margin-top: 10px;
             font-style: italic;
+        }
+        &-item {
+            list-style-type: none; 
+            padding: 0;
         }
     }   
 }

@@ -7,18 +7,20 @@ import AppExperience from './app-experience/app-experience';
 import AppHeader from './app-header/app-header';
 import AppSkills from './app-skills/app-skills';
 
-function App() {
-  return (
-    <div className="App">
-        <AppHeader/>
-        <AppAbout/>
-        <AppSkills/>
-        <AppExperience/>
-        <AppEducation/>
-        <AppCards/>
-        <AppContact/>
-    </div>
-  );
-}
 
+const App = () => {
+    return (
+        <div className="App">
+            <AppHeader/>
+            <AppAbout/>
+            <AppSkills/>
+            <AppExperience/>
+            <AppEducation/>
+            <AppCards/>
+            <AppContact/>
+        </div>
+    );
+}
+ 
+        
 export default App;
