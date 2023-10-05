@@ -16,25 +16,25 @@ const Card = [
     },
     {
         id: 3,
-        png: '',
+        png: 'company employee accounting.png',
         title: 'Company employee accounting',
         data: 'Сентябрь, 2023'
     },
     {
         id: 4,
-        png: 'marvel.png',
+        png: '',
         title: 'Uber 777',
         data: 'Сентябрь, 2022'
     },
     {
         id: 5,
-        png: 'marvel.png',
+        png: '',
         title: 'Run Smart Test',
         data: 'Октябрь, 2022'
     },
     {
         id: 6,
-        png: 'marvel.png',
+        png: '',
         title: 'Delivery',
         data: 'Ноябрь, 2022'
     },

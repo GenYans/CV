@@ -5,7 +5,7 @@ const AppCard = ({product}) => {
         return(
             <div className="cards-list">
                 <a href='/' className="cards-list-block">
-                    <img src={`../../resources/img/${png}`} alt={title} />
+                    <img src={`${png}`} alt={title} />
                     <div className="cards-list-block-name">{title}</div>
                 </a>   
                 <div className="cards-list-block-data">{data}</div>
