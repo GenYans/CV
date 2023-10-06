@@ -1,18 +1,36 @@
-.cards-list {
-    a {
-        z-index: 10;
+.cards {
+    &-list {
+        button {
+            border: none;
+            background-color: white;
+            text-align: left;
+            z-index: 10;
+            padding: 0;
+        }
+        button:hover {
+            transition: 0.5s;
+            text-decoration: underline;
+            color: #2F24B5;
+        }
+        &-block {
+            text-decoration: none;
+            color: black;
+            &-name {
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
     }
-    a:hover {
-        transition: 0.5s;
-        text-decoration: underline;
-        color: #2F24B5;
-    }
-    &-block {
-        text-decoration: none;
-        color: black;
-        &-name {
-            font-weight: 700;
-            font-size: 18px;
+    &-wrapper {
+        display: inline-block; 
+        overflow: hidden;
+        &-block {
+            transition: 0.4s;
+            display: block;
+        }
+        &-block:hover {
+            transform: scale(1.2);   
         }
     }
 }
+

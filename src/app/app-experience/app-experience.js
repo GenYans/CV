@@ -39,6 +39,13 @@ const AppExperience = () => {
                             <div className="experience-studies-descr">Ленинградское областное государственное унитарное предприятие технической инвентаризации и оценки недвижимости
                             </div>
                         </div>
+                        <div className="experience-studies-block">
+                            <div id='studies-title-2' className="experience-studies-title">Индивидуальное предпринимательство / частная практика /
+                            фриланс</div>
+                            <div className="experience-studies-data">Май 2022 — настоящее время 1 год 5 месяцев</div>
+                            <div className="experience-studies-descr">Разработчик фронтэнда. Разработка сайтов на WebFlow и интеграция в Shopify.Изготовление сайтов из макетов в Figma. Разработка сайтов на конструкторе Tilda с интегрированным html + js
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

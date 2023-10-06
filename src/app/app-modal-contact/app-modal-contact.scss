@@ -10,6 +10,7 @@
     align-items: center;
     opacity: 0;
     pointer-events: none;
+    z-index: 11;
     &-wrapper {
         display: flex;
         justify-content: center;
@@ -17,11 +18,31 @@
     &-block, &-btn {
         padding: 0 35px 25px 44px;
     }
+    &-block {
+        &-wrapper {
+            display: grid;
+            grid-template-columns: 50px 657px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        &-name {
+            color: #252525;
+            font-weight: 700;
+            margin-right: 20px;
+        }
+        &-image {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-content: space-between;
+            gap: 10px;
+        }
+    }
     &-btn {
         display: flex;
         &-contact {
             font-family: 'Lato', sans-serif;
             margin-left: 20px;
+            height: 43.71px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,7 +66,7 @@
 .modal-content {
     padding: 20px;
     background-color: white;
-    height: 415px;
+    min-height: 415px;
     width: 850px;
     transform: scale(0.5);
 }

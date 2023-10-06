@@ -3,40 +3,84 @@
 const Card = [
     {
         id: 1,
-        png: 'marvel.png',
+        png: 'img/marvel.png',
         title: 'Marvel',
+        descr: '',
         data: 'Май, 2023',
+        skills: "HTML, CSS, Javascript, React"
 
     },
     {
         id: 2,
-        png: 'coffeeshop.png',
+        png: 'img/coffeeshop.png',
         title: 'Coffee-Shop',
-        data: 'Март, 2023'
+        descr: '',
+        data: 'Март, 2023',
+        skills: "HTML, CSS, Javascript, React"
     },
     {
         id: 3,
-        png: 'company employee accounting.png',
+        png: 'img/company employee accounting.png',
         title: 'Company employee accounting',
-        data: 'Сентябрь, 2023'
+        descr: '',
+        data: 'Сентябрь, 2023',
+        skills: "HTML, CSS, Javascript"
     },
     {
         id: 4,
-        png: '',
+        png: 'img/uber777.png',
         title: 'Uber 777',
-        data: 'Сентябрь, 2022'
+        descr: '',
+        data: 'Сентябрь, 2022',
+        skills: "HTML, CSS"
     },
     {
         id: 5,
-        png: '',
+        png: 'img/runsmarttest.png',
         title: 'Run Smart Test',
-        data: 'Октябрь, 2022'
+        descr: '',
+        data: 'Октябрь, 2022',
+        skills: "HTML, CSS"
     },
     {
         id: 6,
-        png: '',
+        png: 'img/delivery.png',
         title: 'Delivery',
-        data: 'Ноябрь, 2022'
+        descr: '',
+        data: 'Ноябрь, 2022',
+        skills: "HTML, CSS"
+    },
+    {
+        id: 7,
+        png: 'img/irvis.png',
+        title: 'Irvis',
+        descr: '',
+        data: 'Ноябрь, 2022',
+        skills: "HTML, CSS, Javascript"
+    },
+    {
+        id: 8,
+        png: 'img/sz.png',
+        title: 'ЮА «Северо-Запад»',
+        descr: '',
+        data: 'Март, 2023',
+        skills: "Tilda"
+    },
+    {
+        id: 9,
+        png: 'img/na.png',
+        title: 'Non-agency',
+        descr: '',
+        data: 'Апрель, 2023',
+        skills: "Tilda"
+    },
+    {
+        id: 10,
+        png: 'img/vape.png',
+        title: 'Vape',
+        descr: '',
+        data: 'Август, 2023',
+        skills: "Shopify"
     },
 ]
 

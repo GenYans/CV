@@ -73,8 +73,13 @@ const AppAbout = () => {
                                 </div> 
                             </div>
                             <div className="modal-btn">
-                                <button className='about-btn-contact'>отправить сообщение</button>  
-                                <button className='modal-btn-contact'>вернуться к резюме</button> 
+                                <form action="/">
+                                    <button className='about-btn-contact'>отправить сообщение</button>
+                                </form>  
+                                <form action="/">
+                                    <button className='modal-btn-contact'>вернуться к резюме</button>
+                                </form>
+                                 
                             </div>
                         </AppModalContact>
                     </div>
