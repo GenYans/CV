@@ -21,7 +21,7 @@
     &-block {
         &-wrapper {
             display: grid;
-            grid-template-columns: 50px 657px;
+            grid-template-columns: auto 669px;
             margin-top: 15px;
             margin-bottom: 20px;
         }
@@ -32,9 +32,12 @@
         }
         &-image {
             display: grid;
-            grid-template-columns: repeat(2, auto);
-            justify-content: space-between;
+            grid-template-columns: repeat(2, 380px);
+            justify-content: center;
             gap: 10px;
+        }
+        &-image img {
+            max-width: 380px;
         }
     }
     &-btn {

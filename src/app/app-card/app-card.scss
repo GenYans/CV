@@ -1,18 +1,12 @@
 .cards {
     &-list {
-        button {
+        &-block {
             border: none;
             background-color: white;
             text-align: left;
             z-index: 10;
             padding: 0;
-        }
-        button:hover {
-            transition: 0.5s;
-            text-decoration: underline;
-            color: #2F24B5;
-        }
-        &-block {
+            cursor: pointer;
             text-decoration: none;
             color: black;
             &-name {
@@ -20,6 +14,39 @@
                 font-size: 18px;
             }
         }
+        &-block:hover {
+            transition: 0.5s;
+            text-decoration: underline;
+            color: #2F24B5;
+        }
+        .modal-block-btn-contact, .modal-block-btn-visit {
+            text-transform: uppercase;
+            min-width: 170px;
+            padding: 15px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px;
+            background: #2F24B5;
+            border: 0;
+            font-size: 12px;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-right: 30px;
+            margin-top: 25px;
+        }
+        .modal-block-btn-contact {
+            margin-right: 0;
+            background: #EFEFEF;
+            color: black;
+        }
+        .modal-block-image img{
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+        }
+        .modal-block-btn button:hover {
+            box-shadow: 9px 8px 10px 0px rgba(0, 0, 0, 0.115);
+            transition-duration: 0.8s;
+        } 
     }
     &-wrapper {
         display: inline-block; 

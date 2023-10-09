@@ -6,7 +6,7 @@ import AppModalContact from '../app-modal-contact/app-modal-contact';
 
 const AppCard = ({product}) => {
     const [modalActive, setModalActive] = useState(false);
-    const {png, title, data, skills} = product;
+    const {png, png2, png3, title, data, skills, descr, visit, href} = product;
         return(
             <div className="cards-list">
                 <button onClick={() => setModalActive(true)} className="cards-list-block">
@@ -19,22 +19,25 @@ const AppCard = ({product}) => {
                 <AppModalContact active={modalActive} setActive={setModalActive}>
                     <div className="modal-block">
                         <h1 className='modal-block-title'>{title}</h1>
-                        <p>Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.</p>
+                        <div className="modal-block-wrapper">
+                            <div className="modal-block-name">Описание:</div>
+                            <div className="modal-block-stack">{descr}</div>
+                        </div>
                         <div className='modal-block-wrapper'>
-                            <div className="modal-block-name">Stack:</div>
+                            <div className="modal-block-name">Стэк:</div>
                             <div className="modal-block-stack">{skills}</div>
                         </div>
                         <div className='modal-block-wrapper'>
-                            <div className="modal-block-name">Data:</div>
+                            <div className="modal-block-name">Дата:</div>
                             <div className="modal-block-data">{data}</div>
                         </div>
                         <div className="modal-block-image">
-                            <img src={png} alt={title} />
-                            <img src={png} alt={title} />
+                            <img src={png2} alt={png2} />
+                            <img src={png3} alt={png3} />
                         </div>
                         <div className="modal-block-btn">
-                            <button className='modal-btn-visit' >посетить сайт</button>
-                            <button className='modal-btn-back'>вернуться к резюме</button>
+                            <a target="blank" href={href}><button className='modal-block-btn-visit' >посетить {visit}</button></a>
+                            <button className='modal-block-btn-contact'>вернуться к резюме</button>
                         </div>
                         
                     </div>
