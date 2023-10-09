@@ -4,7 +4,7 @@ import Experience from '../../resources/icons/experience.svg'
 
 const AppExperience = () => {
     return(
-       <section id='experience' className="experience">
+       <div id='experience' className="experience">
             <div className="container">
                 <div className="experience-wrapper">
                 <div className="experience-about">
@@ -43,13 +43,13 @@ const AppExperience = () => {
                             <div id='studies-title-2' className="experience-studies-title">Индивидуальное предпринимательство / частная практика /
                             фриланс</div>
                             <div className="experience-studies-data">Май 2022 — настоящее время 1 год 5 месяцев</div>
-                            <div className="experience-studies-descr">Разработчик фронтэнда. Разработка сайтов на WebFlow и интеграция в Shopify.Изготовление сайтов из макетов в Figma. Разработка сайтов на конструкторе Tilda с интегрированным html + js
+                            <div className="experience-studies-descr">Разработчик фронтэнда. Разработка сайтов на <span>WebFlow</span>  и интеграция в <span>Shopify</span> .Изготовление сайтов из макетов в <span>Figma</span> . Разработка сайтов на конструкторе <span>Tilda</span> с интегрированным <span>html + js</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-       </section>
+       </div>
     )
 };
 

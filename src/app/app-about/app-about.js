@@ -9,14 +9,14 @@ import AppModalContact from '../app-modal-contact/app-modal-contact';
 const AppAbout = () => {
     const [modalActive, setModalActive] = useState(false);
     return(
-        <section id='hello' className='about'>
+        <div id='hello' className='about'>
             <div className="container">
                 <div className="row">
                     <div className="about-image">
                         <img src={Man} alt="man" />
                     </div>
                     <div className="about-me">
-                        <div class="about-me-title">
+                        <div className="about-me-title">
                             <h1>Привет, меня зовут Геннадий</h1>
                         </div>
                         <div class="about-me-descr">
@@ -68,7 +68,7 @@ const AppAbout = () => {
                                         <input className='contact-form-email' type="text" placeholder="E-mail"/>
                                     </div>
                                     <div className="contact-form-block">
-                                        <textarea class="contact-form-message" placeholder="Сообщение" required=""></textarea>
+                                        <textarea className="contact-form-message" placeholder="Сообщение" required=""></textarea>
                                     </div>
                                 </div> 
                             </div>
@@ -86,7 +86,7 @@ const AppAbout = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 };
 

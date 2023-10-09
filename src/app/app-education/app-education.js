@@ -4,7 +4,7 @@ import Education from '../../resources/icons/education.svg'
 
 const AppEducation = () => {
     return(
-       <section id='education' className="education">
+       <div id='education' className="education">
             <div className="container">
                 <div className="education-wrapper">
                 <div className="education-about">
@@ -40,7 +40,7 @@ const AppEducation = () => {
                     </div>
                 </div>
             </div>
-       </section>
+       </div>
     )
 };
 

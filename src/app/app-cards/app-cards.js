@@ -16,7 +16,7 @@ const AppCards = () => {
     }) 
 
     return(
-        <section id='portfolio' className="cards">
+        <div id='portfolio' className="cards">
             <div className="container">
                 <div className="cards-wrapper">
                     <div className="cards-title">Портфолио</div>
@@ -34,7 +34,7 @@ const AppCards = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 };
 

@@ -9,7 +9,7 @@ import FacebookWhite from '../../resources/icons/facebook-white.svg'
 
 const AppContact = () => {
     return(
-       <section id='contact' className='contact'>
+       <div id='contact' className='contact'>
             <div className="container">
                 <div className="contact-wrapper">
                     <div className="contact-about">
@@ -34,9 +34,9 @@ const AppContact = () => {
                     </div>  
                 </div>
             </div>
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-wrapper">
+            <footer className="footer">
+                <div className="container">
+                    <div className="footer-wrapper">
                         <a href="/"><img className='footer-logo' src={LogoWhite} alt="LogoWhite" /></a>
                         <ul className="footer-list">
                             <a href="/"><li className="footer-list-item">Конфиденциальность</li></a>
@@ -54,7 +54,7 @@ const AppContact = () => {
                     </div>
                 </div>
             </footer>
-       </section>
+       </div>
     )
 };
 
