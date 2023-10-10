@@ -19,6 +19,12 @@
         padding: 0;
         display: flex;
         list-style-type: none;
+        &-list {
+            &-active {
+                color: #2F24B5;
+                text-decoration: underline;
+            }
+        }
         &-list a{
             padding-right: 25px;
             font-weight: 700;
@@ -27,7 +33,21 @@
             text-transform: uppercase;
             font-size: 14px;
         }
-        &-list a:hover {
+        .categories {
+            display: flex;
+        }
+        .categories div{
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        .categories div {
+            padding-left: 0px;  
+        }
+        .categories div:hover {
             color: #2F24B5;
             text-decoration: underline;
         }

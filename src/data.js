@@ -22,6 +22,7 @@ const Card = [
         png3: 'img/coffeeshop3.png',
         data: 'Март, 2023',
         skills: "HTML, CSS, Javascript, React, React Router",
+        stack: 'HTML/CSS',
         visit: 'GitHub',
         href: 'https://github.com/GenYans/Coffee-shop'
     },
@@ -34,6 +35,7 @@ const Card = [
         png3: 'img/company-employee-accounting3.png',
         data: 'Сентябрь, 2023',
         skills: "HTML, CSS, Javascript",
+        stack: 'JavaScript',
         visit: 'GitHub',
         href: 'https://github.com/GenYans/Company-employee-accounting'
     },
@@ -46,6 +48,7 @@ const Card = [
         png3: 'img/uber7773.png',
         data: 'Сентябрь, 2022',
         skills: "HTML, CSS",
+        stack: 'HTML/CSS',
         visit: 'GitHub',
         href: 'https://github.com/GenYans/Uber777'
     },
@@ -122,5 +125,4 @@ const Card = [
         href: ''
     },
 ]
-
 export default Card;

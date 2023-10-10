@@ -42,7 +42,7 @@ const AppExperience = () => {
                         <div className="experience-studies-block">
                             <div id='studies-title-2' className="experience-studies-title">Индивидуальное предпринимательство / частная практика /
                             фриланс</div>
-                            <div className="experience-studies-data">Май 2022 — настоящее время 1 год 5 месяцев</div>
+                            <div className="experience-studies-data">Май 2022 — настоящее время</div>
                             <div className="experience-studies-descr">Разработчик фронтэнда. Разработка сайтов на <span>WebFlow</span>  и интеграция в <span>Shopify</span> .Изготовление сайтов из макетов в <span>Figma</span> . Разработка сайтов на конструкторе <span>Tilda</span> с интегрированным <span>html + js</span>
                             </div>
                         </div>

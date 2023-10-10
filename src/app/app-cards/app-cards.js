@@ -5,15 +5,20 @@ import { useState } from 'react';
 import data from '../../data';
 
 import AppCard from '../app-card/app-card';
+import Categories from '../../categories';
 
 
 const AppCards = () => {
 
     const [card] = useState(data);
 
+    function chooseCategory(categories) {
+        console.log(categories)
+    }
+
     const products = card.map((product) => {
         return <AppCard product={product} key={product.id}/>
-    }) 
+    })
 
     return(
         <div id='portfolio' className="cards">
@@ -21,13 +26,7 @@ const AppCards = () => {
                 <div className="cards-wrapper">
                     <div className="cards-title">Портфолио</div>
                     <ul className="cards-menu">
-                        <li className="cards-menu-list"><a href="/">Все проекты</a></li>
-                        <li className="cards-menu-list"><a href="/">Cайты</a></li>
-                        <li className="cards-menu-list"><a href="/">Html/css</a></li>
-                        <li className="cards-menu-list"><a href="/">JavaScript</a></li>
-                        <li className="cards-menu-list"><a href="/">React</a></li>
-                        <li className="cards-menu-list"><a href="/">Tilda</a></li>
-                        <li className="cards-menu-list"><a href="/">Shopify</a></li>
+                        <Categories chooseCategory={chooseCategory}/>
                     </ul>
                     <div className="cards-portfolio">
                         {products}
