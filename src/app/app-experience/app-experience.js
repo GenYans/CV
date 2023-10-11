@@ -10,9 +10,7 @@ const AppExperience = () => {
                 <div className="experience-about">
                         <div className="experience-about-title">Опыт</div>
                         <div className="experience-about-descr">Я переучился на front-end разработчика в ходе работы в инженерно-строительной сфере.Хоть у меня нет прямого опыта работы в IT-отрасли, я приобрел опыт работы с программами для моделирования и визуализации, что помогло мне лучше понять, как создавать функциональные и эстетически приятные интерфейсы.</div>
-                        <div className="experience-about-logo">
-                            <img src={Experience} alt="bulb" />
-                        </div>
+
                     </div>
                     <div className="experience-studies">
                         <div className="experience-studies-block">
@@ -47,6 +45,9 @@ const AppExperience = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="experience-about-logo">
+                            <img src={Experience} alt="bulb" />
+                        </div>
                 </div>
             </div>
        </div>

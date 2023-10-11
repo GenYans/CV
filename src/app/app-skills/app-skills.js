@@ -10,9 +10,6 @@ const AppSkills = () => {
                 <div className="skills-about">
                     <div className="skills-about-title">Стэк</div>
                     <div className="skills-about-descr">Я вдохновлен программированием и стремлюсь к развитию своих навыков в front-end разработке. Я люблю изучать новые технологии и подходы и делаю это фундаментально, чтобы глубоко понимать теорию и базовые концепции. Я уверен, что мой опыт и желание учиться новому сделают меня ценным активом для вашей команды.</div>
-                    <div className="skills-about-logo">
-                        <img src={Bulb} alt="bulb" />
-                    </div>
                 </div>
                     <div className="skills-programm">
                         <div className="skills-programm-block">
@@ -38,6 +35,9 @@ const AppSkills = () => {
                             CrazyEgg.
                             </div>
                         </div>
+                    </div>
+                    <div className="skills-about-logo">
+                        <img src={Bulb} alt="bulb" />
                     </div>
                 </div>
             </div>

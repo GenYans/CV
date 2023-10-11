@@ -20,3 +20,9 @@ svg path {
     margin: 0 auto;
     width: 1200px;
 }
+
+@media screen and (max-width: 425px){
+    .container {
+        width: 350px;
+    }
+}

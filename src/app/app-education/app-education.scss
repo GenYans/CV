@@ -1,11 +1,13 @@
 .education {
     margin-top: 40px;
-    min-height: 525px;
+    min-height: auto;
     border-bottom: 1px solid #3024b51d;
+    &-logo {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
     &-about {
-        &-logo {
-            margin-top: 270px;
-        }
         &-title {
             font-size: 30px;
             font-weight: 700;
@@ -18,7 +20,7 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 400px 800px;
-        grid-template-rows: 485px;
+        grid-template-rows: 210px 260px;
     }
     &-studies {
         min-height: 485px;
@@ -37,4 +39,20 @@
             font-style: italic;
         }
     }   
+}
+
+@media screen and (max-width: 425px){
+    .education {
+        &-wrapper {
+            grid-template-columns: 350px;
+            grid-template-rows: auto auto auto;
+        }
+        &-studies {
+            margin-left: 0;
+        }
+        &-logo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 }

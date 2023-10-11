@@ -68,3 +68,31 @@ h1 {
         cursor: pointer;
     }
 }
+
+
+@media screen and (max-width: 425px){
+.about {
+    .about-me {
+        margin-left: 0px;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: 395px;
+        justify-content: center;
+    }
+    .about-social {
+        display: grid;
+        grid-template-columns: 75px 275px;
+        justify-content: center;
+    }
+    .about-btn {
+        display: grid;
+        grid-template-columns: 350px;
+        justify-content: center;
+        &-download {
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+    }
+}
+}

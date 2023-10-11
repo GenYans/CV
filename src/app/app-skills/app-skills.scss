@@ -11,14 +11,16 @@
             margin-top: 10px;
         }
         &-logo {
-            margin-top: 100px;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 20px;
         }
     }
     &-wrapper {
         display: grid;
         justify-content: center;
         grid-template-columns: 400px 800px;
-        grid-template-rows: 290px;
+        grid-template-rows: 230px 170px;
     }
     &-programm {
         margin-left: 30px;
@@ -36,3 +38,24 @@
     }
 }
 
+@media screen and (max-width: 425px){
+    .skills {
+        height: auto;
+        &-wrapper {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 350px;
+            grid-template-rows: 230px auto auto;
+        }
+        &-programm {
+            margin-left: 0;
+            grid-template-columns: 350px;
+            grid-template-rows: repeat(4, 100px);
+        }
+        &-about {
+            &-logo {
+                margin-top: 20px;
+            }
+        }
+    }
+}

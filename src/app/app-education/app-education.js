@@ -10,9 +10,7 @@ const AppEducation = () => {
                 <div className="education-about">
                         <div className="education-about-title">Образование</div>
                         <div className="education-about-descr">Я уверен, что мой опыт и желание учиться новому сделают меня ценным активом для вашей команды. Я готов работать над проектами, которые будут не только инновационными, но и полезными для пользователей.
-                        <div className="education-about-logo">
-                            <img src={Education} alt="bulb" />
-                        </div>
+
                         </div>
                         
                     </div>
@@ -38,6 +36,9 @@ const AppEducation = () => {
                             <div className="education-studies-descr">Окончил Санкт-Петербургский политехнический университет Петра Великого факультет: Градостроительство</div>
                         </div>
                     </div>
+                    <div className="education-logo">
+                            <img src={Education} alt="bulb" />
+                        </div>
                 </div>
             </div>
        </div>

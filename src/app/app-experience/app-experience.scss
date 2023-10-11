@@ -4,7 +4,9 @@
     border-bottom: 1px solid #3024b51d;
     &-about {
         &-logo {
-            margin-top: 100px;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 20px;
         }
         &-title {
             font-size: 30px;
@@ -18,8 +20,7 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 400px 800px;
-        grid-template-rows: auto;
-        margin-bottom: 50px;
+        grid-template-rows: 250px 250px;
     }
     &-studies {
         margin-left: 30px;
@@ -49,4 +50,24 @@
 
 #studies-title-2, #studies-title-3 {
     margin-top: 30px;
+}
+
+
+@media screen and (max-width: 425px){
+    .experience {
+        &-wrapper {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 350px;
+            grid-template-rows: auto auto auto;
+        }
+        &-studies {
+            margin-left: 0;
+        }
+        &-about {
+            &-logo {
+                margin-top: 20px;
+            }
+        }
+    }
 }
