@@ -21,8 +21,8 @@ const AppContact = () => {
                         <div className="contact-form-block">
                             <input className='contact-form-name' type="text" placeholder="Name"/>
                             <input className='contact-form-email' type="text" placeholder="E-mail"/>
-                            <textarea class="contact-form-message" placeholder="Message" required=""></textarea>
                         </div>
+                        <textarea class="contact-form-message" placeholder="Message" required=""></textarea>
                     </div>
                     <div className="contact-block-logo">
                         <img src={Contact} alt="contact" />

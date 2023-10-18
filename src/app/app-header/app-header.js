@@ -2,6 +2,9 @@ import '../app-header/app-header.scss';
 
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Fade as Hamburger } from 'hamburger-react'
+
+import AppBurger from '../app-burger/app-burger';
 
 import Logo from '../../resources/icons/logo.svg';
 
@@ -16,15 +19,14 @@ render() {
                 <div className="container">
                     <div className="row">
                         <div className="header-menu">
-                            <nav className="main-menu">
-                                <div className='header-menu-logo'>
                                 <img
                                     src={Logo}
                                     className="nav-logo"
                                     alt="Logo"
                                     onClick={this.scrollToTop}
                                 />
-                                </div>
+                                <AppBurger/>
+                            <nav className="main-menu">
                             <ul className="list-inline">
                                 <li className='list-inline-item'>
                                     <Link 
@@ -95,6 +97,7 @@ render() {
                                 </li>
                             </ul>
                         </nav>
+                        <Hamburger/>
                     </div>
                 </div>
             </div>

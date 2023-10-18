@@ -1,4 +1,14 @@
 .cards {
+    &-list {
+        &-block {
+            &-name {
+                margin-top: 10px;
+            }
+            &-data {
+                margin-top: 5px;
+            }
+        }
+    }
     &-portfolio {
         display: grid;
         grid-template-columns: repeat(4, auto);
