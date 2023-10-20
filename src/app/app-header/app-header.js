@@ -2,9 +2,6 @@ import '../app-header/app-header.scss';
 
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { Fade as Hamburger } from 'hamburger-react'
-
-import AppBurger from '../app-burger/app-burger';
 
 import Logo from '../../resources/icons/logo.svg';
 
@@ -25,7 +22,6 @@ render() {
                                     alt="Logo"
                                     onClick={this.scrollToTop}
                                 />
-                                <AppBurger/>
                             <nav className="main-menu">
                             <ul className="list-inline">
                                 <li className='list-inline-item'>
@@ -34,7 +30,7 @@ render() {
                                         to="hello"
                                         spy={true}
                                         smooth={true}
-                                        offset={-125}
+                                        offset={-110}
                                         duration={500}
                                     >
                                     Привет
@@ -45,7 +41,7 @@ render() {
                                     to="skills"
                                     spy={true}
                                     smooth={true}
-                                    offset={-125}
+                                    offset={-110}
                                     duration={500}
                                     >
                                     Стэк
@@ -56,7 +52,7 @@ render() {
                                     to="experience"
                                     spy={true}
                                     smooth={true}
-                                    offset={-125}
+                                    offset={-110}
                                     duration={500}
                                     >
                                     Опыт
@@ -67,7 +63,7 @@ render() {
                                     to="education"
                                     spy={true}
                                     smooth={true}
-                                    offset={-125}
+                                    offset={-110}
                                     duration={500}
                                     >
                                     Образование
@@ -78,7 +74,7 @@ render() {
                                     to="portfolio"
                                     spy={true}
                                     smooth={true}
-                                    offset={-125}
+                                    offset={-110}
                                     duration={500}
                                     >
                                     Портфолио
@@ -89,7 +85,7 @@ render() {
                                     to="contact"
                                     spy={true}
                                     smooth={true}
-                                    offset={-125}
+                                    offset={-110}
                                     duration={500}
                                     >
                                     Контакты
@@ -97,7 +93,7 @@ render() {
                                 </li>
                             </ul>
                         </nav>
-                        <Hamburger/>
+
                     </div>
                 </div>
             </div>

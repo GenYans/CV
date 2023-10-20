@@ -1,0 +1,61 @@
+{
+    "about": "I am Gennady Yanelis",
+    "about_descr":"I retrained as a front-end developer while working in the engineering and construction industry. Although I have no direct experience in the IT industry, I have gained experience with modeling and visualization software, which has helped me better understand how to create functional and aesthetically pleasing interfaces.",
+    "about_phone": "Phone",
+    "about_address_title": "Address",
+    "about_address_descr": "St. Petersburg, st. Chernyshevskaya",
+    "about_address_btn1": "Contact me",
+    "about_address_btn2": "Download cv",
+
+    "all": "All",
+    
+    "skills":"Stack",
+    "skills_descr":"I'm inspired by programming and keen to develop my skills in front-end development. I love learning new technologies and approaches and do so in a fundamental way to deeply understand the theory and underlying concepts. I am confident that my experience and desire to learn new things will make me a valuable asset to your team.",
+    
+    "experience":"Experience",
+    "experience_descr" : "I retrained as a front-end developer while working in the civil engineering industry. Although I have no direct experience in the IT industry, I gained experience with modeling and visualization software, which helped me better understand how to create functional and aesthetically pleasing nice interfaces.",
+
+    "experience_one_name":"VET Engineer",
+    "experience_one_company":"NENSY",
+    "experience_one_date":"September, 2019 — May, 2021",
+    "experience_one_descr":"Review and approval of design solutions arising during the design of the facility. Preparation, maintenance and submission to production of sketch and working drawings of products of varying degrees of complexity when entering an order. Creation of photo cuttings and visualizations of projects made of natural stone; Preparation of necessary documents for the Customer, installation department, sales department and production; Calculation of volumes; Participation in resolving issues regarding changes and additions to the project; Maintaining documentation necessary for delivery of the order.",
+
+    "experience_two_name":"Leading Specialist",
+    "experience_two_company":"Immovables",
+    "experience_two_date":"May 2021 - present",
+    "experience_two_descr":"Leningrad Regional State Unitary Enterprise for Technical Inventory and Real Estate Valuation",
+
+    "experience_three_name":"Individual entrepreneurship / private practice / freelancing",
+    "experience_three_date":"May 2022 - present",
+    "experience_three_descr":"Frontend developer. Website development on WebFlow and integration into Shopify. Website creation from layouts in Figma. Website development using the Tilda constructor with integrated html + js",
+    
+    
+    "education":"Education",
+    "education_descr":"I am confident that my experience and desire to learn new things will make me a valuable asset to your team. I am ready to work on projects that will be not only innovative, but also useful for users.",
+    "education_one_name":"SPBGAU",
+    "education_one_degree":"Bachelor's degree",
+    "education_one_date":"September, 2014 — June, 2018",
+    "education_one_descr":"Studied at the St. Petersburg State Agrarian University at the Faculty: Industrial Civil Engineering",
+    "education_two_name":"SPBPU Peter the Great",
+    "education_two_degree":"Master's degree",
+    "education_two_date":"September, 2018 — June, 2020",
+    "education_two_descr":"Graduated from Peter the Great St. Petersburg Polytechnic University, Faculty: Urban Planning",
+    "education_three_name":"UDEMY WEB Developer",
+    "education_three_degree":"Courses",
+    "education_three_date":"August, 2022 — December, 2022",
+    "education_three_descr":"Graduated from Peter the Great St. Petersburg Polytechnic University, Faculty: Urban Planning",
+    "education_four_name":"UDEMY Complete Course on JavaScript + React",
+    "education_four_degree":"Courses",
+    "education_four_date":"January, 2023 - July, 2023",
+    "education_four_descr":"Graduated from Peter the Great St. Petersburg Polytechnic University, Faculty: Urban Planning",
+
+    "portfolio": "Portfolio",
+
+    "message": "Message",
+    "name": "Name",
+    "contacts": "Contacts",
+    "contacts_descr": "Thank you for looking at my resume. If I interest you, you can contact me",
+    "contact_btn": "send message",
+
+    "confidentiality": "Confidentiality"
+}

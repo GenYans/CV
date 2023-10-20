@@ -4,10 +4,12 @@ import React, {useState} from 'react';
 
 import Man from '../../resources/img/man.png'
 import AppModalContact from '../app-modal-contact/app-modal-contact';
+import { useTranslation } from 'react-i18next';
 
 
 const AppAbout = () => {
     const [modalActive, setModalActive] = useState(false);
+    const {t} = useTranslation();
     return(
         <div id='hello' className='about'>
             <div className="container">
@@ -17,21 +19,21 @@ const AppAbout = () => {
                     </div>
                     <div className="about-me">
                         <div className="about-me-title">
-                            <h1>Привет, меня зовут Геннадий</h1>
+                            <h1>{t("about")}</h1>
                         </div>
                         <div class="about-me-descr">
-                            <p>Я переучился на front-end разработчика в ходе работы в инженерно-строительной сфере. Хоть у меня нет прямого опыта работы в IT-отрасли, я приобрел опыт работы с программами для моделирования и визуализации, что помогло мне лучше понять, как создавать функциональные и эстетически приятные интерфейсы.</p>
+                            <p>{t("about_descr")}</p>
                         </div>
                         <div className="about-info">
                         <div className="about-social">
-                            <p className="about-social-title">Телефон</p>
+                            <p className="about-social-title">{t("about_phone")}</p>
                             <p className="about-social-subtitle">+7 (911) 112-07-62</p>
 
                             <p className="about-social-title">Email</p>
                             <p className="about-social-subtitle"><a href="mailto:yanelisgen@gmail.com">yanelisgen@gmail.com</a></p>
 
-                            <p className="about-social-title">Адрес</p>
-                            <p className="about-social-subtitle">г. Санкт-Петербург, м. Чернышевская</p>
+                            <p className="about-social-title">{t("about_address_title")}</p>
+                            <p className="about-social-subtitle">{t("about_address_descr")}</p>
 
                             <p className="about-social-title">Social</p>
                             <p className="about-social-subtitle">
@@ -53,8 +55,8 @@ const AppAbout = () => {
                         </div>
                         
                         <div className="about-btn">
-                            <button className='about-btn-contact' onClick={() => setModalActive(true)}>связаться со мной</button>
-                            <button className='about-btn-download'>скачать резюме</button>
+                            <button className='about-btn-contact' onClick={() => setModalActive(true)}>{t("about_address_btn1")}</button>
+                            <button className='about-btn-download'>{t("about_address_btn2")}</button>
                         </div>
                         <AppModalContact active={modalActive} setActive={setModalActive}>
                             <div className="modal-block">

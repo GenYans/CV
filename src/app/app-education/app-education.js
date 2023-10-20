@@ -1,39 +1,42 @@
 import '../app-education/app-education.scss'
 
 import Education from '../../resources/icons/education.svg'
+import { useTranslation } from 'react-i18next';
 
 const AppEducation = () => {
+
+    const {t} = useTranslation();
+
     return(
        <div id='education' className="education">
             <div className="container">
                 <div className="education-wrapper">
                 <div className="education-about">
-                        <div className="education-about-title">Образование</div>
-                        <div className="education-about-descr">Я уверен, что мой опыт и желание учиться новому сделают меня ценным активом для вашей команды. Я готов работать над проектами, которые будут не только инновационными, но и полезными для пользователей.
-
+                        <div className="education-about-title">{t("education")}</div>
+                        <div className="education-about-descr">{t("education_descr")}
                         </div>
                         
                     </div>
                     <div className="education-studies">
                         <div className="education-studies-block">
-                            <div id='studies-title-1' className="education-studies-title">СПБГАУ<span>Диплом бакалавра</span></div>
-                            <div className="education-studies-data">Сентябрь, 2014 — Июнь, 2018</div>
-                            <div className="education-studies-descr">Обучался в Санкт-Петербургском Государственном Аграрном университете на факультете: Промышленное гражданское строительство</div>
+                            <div id='studies-title-1' className="education-studies-title">{t("education_one_name")}<span>{t("education_one_degree")}</span></div>
+                            <div className="education-studies-data">{t("education_one_date")}</div>
+                            <div className="education-studies-descr">{t("education_one_descr")}</div>
                         </div>
                         <div className="education-studies-block">
-                            <div id='studies-title-2' className="education-studies-title">СПБПУ Петра Великого<span>Диплом магистра</span></div>
-                            <div className="education-studies-data">Сентябрь, 2018 — Июнь, 2020</div>
-                            <div className="education-studies-descr">Окончил Санкт-Петербургский политехнический университет Петра Великого факультет: Градостроительство</div>
+                            <div id='studies-title-2' className="education-studies-title">{t("education_two_name")}<span>{t("education_two_degree")}</span></div>
+                            <div className="education-studies-data">{t("education_two_date")}</div>
+                            <div className="education-studies-descr">{t("education_two_descr")}</div>
                         </div>
                         <div className="education-studies-block">
-                            <div id='studies-title-3' className="education-studies-title">UDEMY WEB-разработчик<span>Курсы</span></div>
-                            <div className="education-studies-data">Август, 2022 — Декабрь, 2022</div>
-                            <div className="education-studies-descr">Окончил Санкт-Петербургский политехнический университет Петра Великого факультет: Градостроительство</div>
+                            <div id='studies-title-3' className="education-studies-title">{t("education_three_name")}<span>{t("education_three_degree")}</span></div>
+                            <div className="education-studies-data">{t("education_three_date")}</div>
+                            <div className="education-studies-descr">{t("education_three_descr")}</div>
                         </div>
                         <div className="education-studies-block">
-                            <div id='studies-title-3' className="education-studies-title">UDEMY Полный курс по JavaScript + React<span>Курсы</span></div>
-                            <div className="education-studies-data">Январь, 2023 — Июль, 2023</div>
-                            <div className="education-studies-descr">Окончил Санкт-Петербургский политехнический университет Петра Великого факультет: Градостроительство</div>
+                            <div id='studies-title-3' className="education-studies-title">{t("education_four_name")}<span>{t("education_four_degree")}</span></div>
+                            <div className="education-studies-data">{t("education_four_date")}</div>
+                            <div className="education-studies-descr">{t("education_four_descr")}</div>
                         </div>
                     </div>
                     <div className="education-logo">

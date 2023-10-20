@@ -6,29 +6,37 @@ import LogoWhite from '../../resources/icons/logo-white.svg';
 import GitWhite from '../../resources/icons/git-white.svg'
 import InstWhite from '../../resources/icons/inst-white.svg'
 import FacebookWhite from '../../resources/icons/facebook-white.svg'
+import { useTranslation } from 'react-i18next';
 
 const AppContact = () => {
+
+    const {t, i18n} = useTranslation();
+
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    }
+
     return(
        <div id='contact' className='contact'>
             <div className="container">
                 <div className="contact-wrapper">
                     <div className="contact-about">
-                        <div className="contact-about-title">Контакты</div>
-                            <div className="contact-about-descr">Спасибо что ознакомились с моим резюме. Если я заинтересовал вас, вы можете связаться со мной
+                        <div className="contact-about-title">{t("contacts")}</div>
+                            <div className="contact-about-descr">{t("contacts_descr")}
                         </div>
                     </div>
                     <div className="contact-form">
                         <div className="contact-form-block">
-                            <input className='contact-form-name' type="text" placeholder="Name"/>
+                            <input className='contact-form-name' type="text" placeholder={t("name")}/>
                             <input className='contact-form-email' type="text" placeholder="E-mail"/>
                         </div>
-                        <textarea class="contact-form-message" placeholder="Message" required=""></textarea>
+                        <textarea class="contact-form-message" placeholder={t("message")} required=""></textarea>
                     </div>
                     <div className="contact-block-logo">
                         <img src={Contact} alt="contact" />
                     </div>  
                     <div className="contact-block-btn">
-                        <button className='about-btn-contact'>отправить сообщение</button>   
+                        <button className='about-btn-contact'>{t("contact_btn")}</button>   
                     </div>  
                 </div>
             </div>
@@ -37,7 +45,7 @@ const AppContact = () => {
                     <div className="footer-wrapper">
                         <a href="/"><img className='footer-logo' src={LogoWhite} alt="LogoWhite" /></a>
                         <ul className="footer-list">
-                            <a href="/"><li className="footer-list-item">Конфиденциальность</li></a>
+                            <a href="/"><li className="footer-list-item">{t("confidentiality")}</li></a>
                             <a href="/"><li className="footer-list-item">Copyright 2023 Gennady Yanelis</li></a>
                         </ul>
                         <ul className="footer-social">
@@ -47,8 +55,8 @@ const AppContact = () => {
                         </ul>
                     </div>
                     <div className="footer-language">
-                        <button className='footer-btn'>RU</button>
-                        <button className='footer-btn'>EN</button>
+                        <button onClick={() => changeLanguage("ru")} className='footer-btn'>RU</button>
+                        <button onClick={() => changeLanguage("en")} className='footer-btn'>EN</button>
                     </div>
                 </div>
             </footer>

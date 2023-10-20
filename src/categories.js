@@ -6,10 +6,6 @@ export class Categories extends Component {
         this.state = {
             categories: [
                 {
-                    key: 'all',
-                    name: 'Все проекты'
-                },
-                {
                     key: 'htmlcss',
                     name: 'HTML/CSS'
                 },

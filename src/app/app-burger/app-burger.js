@@ -7,27 +7,13 @@ const AppBurger = () => {
         <div className='app-burger'>
             <ul>
                 <li>
-                    <Link to="hello">
-                    </Link>
-                </li>
-                <li>
-                    <Link to="skills">
-                    </Link>
-                </li>
-                <li>
-                    <Link to="experience">
-                    </Link>
-                </li>
-                <li>
-                    <Link to="education">
-                    </Link>
-                </li>
-                <li>
-                    <Link to="portfolio">
-                    </Link>
-                </li>
-                <li>
-                    <Link to="contact">
+                    <Link 
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        >
+                        Стэк
                     </Link>
                 </li>
             </ul>
