@@ -41,6 +41,10 @@ h1 {
 .about-btn {
     display: inline-flex;
     margin-top: 20px;
+    &-download a {
+        text-decoration: none;
+        color: black;
+    }
     button:hover {
         box-shadow: 9px 8px 10px 0px rgba(0, 0, 0, 0.115);
         transition-duration: 0.8s;

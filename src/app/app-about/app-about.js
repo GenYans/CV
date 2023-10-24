@@ -56,30 +56,30 @@ const AppAbout = () => {
                         
                         <div className="about-btn">
                             <button className='about-btn-contact' onClick={() => setModalActive(true)}>{t("about_address_btn1")}</button>
-                            <button className='about-btn-download'>{t("about_address_btn2")}</button>
+                            <button className='about-btn-download'> <a href="Резюме_Frontend_разработчик_Геннадии_Янелис.pdf" download>{t("about_address_btn2")}</a> </button>
                         </div>
                         <AppModalContact active={modalActive} setActive={setModalActive}>
                             <div className="modal-block">
-                                <h1>Let’s work together</h1>
-                                <p>Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.</p>
+                                <h1>{t("modal_title")}</h1>
+                                <p>{t("modal_subtitle")}</p>
                             </div>
                             <div className="modal-wrapper">
                                 <div className="contact-form">
                                     <div className="contact-form-block">
-                                        <input className='contact-form-name' type="text" placeholder="Имя"/>
+                                        <input className='contact-form-name' type="text" placeholder={t("name")}/>
                                         <input className='contact-form-email' type="text" placeholder="E-mail"/>
                                     </div>
                                     <div className="contact-form-block">
-                                        <textarea className="contact-form-message" placeholder="Сообщение" required=""></textarea>
+                                        <textarea className="contact-form-message" placeholder={t("message")}required=""></textarea>
                                     </div>
                                 </div> 
                             </div>
                             <div className="modal-btn">
                                 <form action="/">
-                                    <button className='about-btn-contact'>отправить сообщение</button>
+                                    <button className='about-btn-contact'>{t("modal_btn")}</button>
                                 </form>  
                                 <form action="/">
-                                    <button className='modal-btn-contact'>вернуться к резюме</button>
+                                    <button onClick={() => setModalActive(false)} className='modal-btn-contact'>{t("modal_btn2")}</button>
                                 </form>
                                  
                             </div>

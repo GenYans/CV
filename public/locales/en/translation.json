@@ -10,6 +10,11 @@
     "about_address_btn1": "Contact me",
     "about_address_btn2": "Download cv",
 
+    "modal_title":"Let’s work together",
+    "modal_subtitle":"Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.",
+    "modal_btn":"send a message",
+    "modal_btn2":"back to sv",
+
     "all": "All",
     
     "skills":"Skills",
