@@ -1,4 +1,7 @@
 {
+    "hello": "Hello",
+    
+
     "about": "I am Gennady Yanelis",
     "about_descr":"I retrained as a front-end developer while working in the engineering and construction industry. Although I have no direct experience in the IT industry, I have gained experience with modeling and visualization software, which has helped me better understand how to create functional and aesthetically pleasing interfaces.",
     "about_phone": "Phone",
@@ -9,7 +12,7 @@
 
     "all": "All",
     
-    "skills":"Stack",
+    "skills":"Skills",
     "skills_descr":"I'm inspired by programming and keen to develop my skills in front-end development. I love learning new technologies and approaches and do so in a fundamental way to deeply understand the theory and underlying concepts. I am confident that my experience and desire to learn new things will make me a valuable asset to your team.",
     
     "experience":"Experience",

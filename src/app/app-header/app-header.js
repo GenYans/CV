@@ -1,16 +1,19 @@
 import '../app-header/app-header.scss';
 
-import React, { Component } from "react";
+import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useTranslation } from 'react-i18next';
 
 import Logo from '../../resources/icons/logo.svg';
 
-export default class Navbar extends Component {
-    scrollToTop = () => {
-      scroll.scrollToTop();
-    };
+    const Navbar = () => {
 
-render() {
+    function scrollToTop () {
+        scroll.scrollToTop();
+    }
+
+    const {t} = useTranslation();
+
     return(
             <header className="header">
                 <div className="container">
@@ -20,7 +23,7 @@ render() {
                                     src={Logo}
                                     className="nav-logo"
                                     alt="Logo"
-                                    onClick={this.scrollToTop}
+                                    onClick={scrollToTop}
                                 />
                             <nav className="main-menu">
                             <ul className="list-inline">
@@ -33,7 +36,7 @@ render() {
                                         offset={-110}
                                         duration={500}
                                     >
-                                    Привет
+                                    {t("hello")}
                                     </Link>
                                 </li>
                                 <li className='list-inline-item'>
@@ -44,7 +47,7 @@ render() {
                                     offset={-110}
                                     duration={500}
                                     >
-                                    Стэк
+                                    {t("skills")}
                                     </Link>
                                 </li>
                                 <li className='list-inline-item'>
@@ -55,7 +58,7 @@ render() {
                                     offset={-110}
                                     duration={500}
                                     >
-                                    Опыт
+                                    {t("experience")}
                                     </Link>
                                 </li>
                                 <li className='list-inline-item'>
@@ -66,7 +69,7 @@ render() {
                                     offset={-110}
                                     duration={500}
                                     >
-                                    Образование
+                                    {t("education")}
                                     </Link>
                                 </li>
                                 <li className='list-inline-item'>
@@ -77,7 +80,7 @@ render() {
                                     offset={-110}
                                     duration={500}
                                     >
-                                    Портфолио
+                                    {t("portfolio")}
                                     </Link>
                                 </li>
                                 <li className='list-inline-item'>
@@ -88,7 +91,7 @@ render() {
                                     offset={-110}
                                     duration={500}
                                     >
-                                    Контакты
+                                    {t("contacts")}
                                     </Link>
                                 </li>
                             </ul>
@@ -99,5 +102,7 @@ render() {
             </div>
         </header>
         )
-    }
 }
+
+
+export default Navbar;
