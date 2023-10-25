@@ -21,7 +21,7 @@ import Logo from '../../resources/icons/logo.svg';
                         <div className="header-menu">
                                 <img
                                     src={Logo}
-                                    className="nav-logo"
+                                    className="header-menu-logo"
                                     alt="Logo"
                                     onClick={scrollToTop}
                                 />

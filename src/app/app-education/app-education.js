@@ -15,7 +15,7 @@ const AppEducation = () => {
                         <div className="education-about-title">{t("education")}</div>
                         <div className="education-about-descr">{t("education_descr")}
                         </div>
-                        
+ 
                     </div>
                     <div className="education-studies">
                         <div className="education-studies-block">
