@@ -4,11 +4,18 @@ import '../app-contact/app-contact.scss'
 
 import LogoWhite from '../../resources/icons/logo-white.svg';
 import GitWhite from '../../resources/icons/git-white.svg'
-import InstWhite from '../../resources/icons/inst-white.svg'
-import FacebookWhite from '../../resources/icons/facebook-white.svg'
+import Inst from '../../resources/icons/inst.svg'
+import Telegramm from '../../resources/icons/tg.svg'
+import Vk from '../../resources/icons/vk.svg'
+import Wap from '../../resources/icons/wap.svg'
 import { useTranslation } from 'react-i18next';
+import { animateScroll as scroll } from "react-scroll";
 
 const AppContact = () => {
+
+    function scrollToTop () {
+        scroll.scrollToTop();
+    }
 
     const {t, i18n} = useTranslation();
 
@@ -30,7 +37,7 @@ const AppContact = () => {
                             <input className='contact-form-name' type="text" placeholder={t("name")}/>
                             <input className='contact-form-email' type="text" placeholder="E-mail"/>
                         </div>
-                        <textarea class="contact-form-message" placeholder={t("message")} required=""></textarea>
+                        <textarea className="contact-form-message" placeholder={t("message")}></textarea>
                     </div>
                     <div className="contact-block-logo">
                         <img src={Contact} alt="contact" />
@@ -43,15 +50,17 @@ const AppContact = () => {
             <footer className="footer">
                 <div className="container">
                     <div className="footer-wrapper">
-                        <a href="/"><img className='footer-logo' src={LogoWhite} alt="LogoWhite" /></a>
+                        <img onClick={scrollToTop} className='footer-logo' src={LogoWhite} alt="LogoWhite" />
                         <ul className="footer-list">
                             <a href="/"><li className="footer-list-item">{t("confidentiality")}</li></a>
                             <a href="/"><li className="footer-list-item">Copyright 2023 Gennady Yanelis</li></a>
                         </ul>
                         <ul className="footer-social">
-                            <a href="/"><li className="footer-social-item"><img src={GitWhite} alt="git" /></li></a>
-                            <a href="/"><li className="footer-social-item"><img src={InstWhite} alt="git" /></li></a>
-                            <a href="/"><li className="footer-social-item"><img src={FacebookWhite} alt="git" /></li></a>
+                            <a target="blank" href="https://github.com/GenYans"><li className="footer-social-item"><img src={GitWhite} alt="git" /></li></a>
+                            <a target="blank" href="https://t.me/@genyanelis"><li className="footer-social-item"><img src={Telegramm} alt="tg" /></li></a>
+                            <a target="blank" href="https://wa.me/89111120762"><li className="footer-social-item"><img src={Wap} alt="wap" /></li></a>
+                            <a target="blank" href="https://vk.com/gennadyanelis"><li className="footer-social-item"><img src={Vk} alt="vk" /></li></a>
+                            <a target="blank" href="https://instagram.com/@gennadyanelis"><li className="footer-social-item"><img src={Inst} alt="inst" /></li></a>
                         </ul>
                     </div>
                     <div className="footer-language">

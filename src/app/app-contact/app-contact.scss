@@ -76,9 +76,23 @@
     padding: 15px 0px;
     text-align: center;
     color: white;
+    &-social {
+        cursor: pointer;
+        a:hover {
+            transform: translateY(-5px);
+            transition: 0.5s;
+        }
+        a:not(:hover) {
+            transform: translateY(5px);
+            transition: 0.5s;
+        }
+    }
+    &-logo {
+        cursor: pointer;
+    }
     &-wrapper {
         display: grid;
-        grid-template-columns: 135px auto auto;
+        grid-template-columns: 255px auto auto;
         justify-content: space-between;
         align-items: center;
         a {
