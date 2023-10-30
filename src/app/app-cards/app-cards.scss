@@ -20,6 +20,10 @@
     border-bottom: 1px solid #3024b51d;
     &-wrapper {
         margin-top: 40px;
+        &-block {
+            max-width: 270px;
+            min-height: 270px;
+        }
     }
     &-title {
         font-size: 30px;

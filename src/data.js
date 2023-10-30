@@ -1,5 +1,3 @@
-
-
 const Card = [
     {
         id: 1,
@@ -124,5 +122,17 @@ const Card = [
         visit: 'сайт',
         href: ''
     },
+    {
+        id: 11,
+        png: 'img/food.png',
+        title: 'Food',
+        descr: 'Создания дизайна страниц в Figma и структуры сайта в Miro (пожелание заказчика).Создание стилей в Webflow с переносом их в Shopify с помощью сервиса Udesly. Формирование отдельных страниц для категорий товаров с привязкой к карточкам с главной страницы.Уникализированные страницы для каждых товаров (10 шт.).Интегрированные CSS стили и анимированные элементы JS.Подключение платежной системы',
+        png2: 'img/food2.png',
+        png3: 'img/food3.png',
+        data: 'Март, 2023',
+        skills: "HTML, CSS, LESS, Javascript, PHP",
+        visit: 'GitHub',
+        href: 'https://github.com/GenYans/Food'
+    }
 ]
 export default Card;
