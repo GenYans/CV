@@ -1,12 +1,14 @@
 import '../app-header/app-header.scss';
 
-import React from "react";
+import React, {useState} from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useTranslation } from 'react-i18next';
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 
 import Logo from '../../resources/icons/logo.svg';
 
     const Navbar = () => {
+        const [nav, setNav] = useState(false);
 
     function scrollToTop () {
         scroll.scrollToTop();
@@ -26,7 +28,7 @@ import Logo from '../../resources/icons/logo.svg';
                                     onClick={scrollToTop}
                                 />
                             <nav className="main-menu">
-                            <ul className="list-inline">
+                            <ul className={nav ? ['list-inline', 'active'].join(' '): ['list-inline']}>
                                 <li className='list-inline-item'>
                                     <Link 
                                         activeClass='active'
@@ -95,6 +97,9 @@ import Logo from '../../resources/icons/logo.svg';
                                     </Link>
                                 </li>
                             </ul>
+                            <div onClick={() => setNav(!nav)} className='mobile-btn'>
+                                {nav ? <AiOutlineClose size={35}/> : <AiOutlineMenu size={35}/>}
+                            </div>
                         </nav>
 
                     </div>
