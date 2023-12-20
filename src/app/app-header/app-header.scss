@@ -92,11 +92,22 @@
         right: 0;
         bottom: 0;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 100px;
         height: 100vh;
         background-color: #2F24B5;
         z-index: 10;
         transition: left 0.5s;
+        &-item {
+            a {
+                color: white;
+                font-size: 14px;
+            }
+            a:hover {
+                transition: 0.5s;
+                text-decoration: none;
+                color: white
+            }
+        }
     }
     .active {
         left: 0;

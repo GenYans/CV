@@ -82,12 +82,12 @@ h1 {
         justify-content: center;
     }
     .about-me {
-        h1 {
+        margin-left: 0px;
+        &-title {
             margin-top: 10px;
             margin-left: 20px;
             margin-right: 20px;
         }
-        margin-left: 0px;
         &-descr {
             p {
                 margin-left: 20px;
