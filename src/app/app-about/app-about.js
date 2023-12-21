@@ -89,11 +89,11 @@ const AppAbout = () => {
                                 </div> 
                             </div>
                             <div className="modal-btn">
-                                <form action="/">
+                                <form>
                                     <button className='about-btn-contact'>{t("modal_btn")}</button>
                                 </form>  
-                                <form action="/">
-                                    <button className='modal-btn-contact'>{t("modal_btn2")}</button>
+                                <form>
+                                    <button onClick={() => setModalActive(false)} className='modal-btn-contact'>{t("modal_btn2")}</button>
                                 </form> 
                             </div>
                         </AppModalContact>

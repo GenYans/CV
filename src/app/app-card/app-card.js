@@ -37,7 +37,7 @@ const AppCard = ({product}) => {
                         </div>
                         <div className="modal-block-btn">
                             <a target="blank" href={href}><button className='modal-block-btn-visit' >посетить {visit}</button></a>
-                            <button className='modal-block-btn-contact'>вернуться к резюме</button>
+                            <button onClick={() => setModalActive(false)} className='modal-block-btn-contact'>вернуться к резюме</button>
                         </div>
                         
                     </div>

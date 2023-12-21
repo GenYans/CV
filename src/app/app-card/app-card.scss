@@ -1,4 +1,7 @@
 .cards {
+    &-menu {
+        display: none;
+    }
     &-list {
         &-block {
             border: none;
@@ -65,6 +68,9 @@
     .cards {
         &-wrapper img { 
             min-width: 350px;
+        }
+        &-menu {
+            display: none;
         }
     }
 }

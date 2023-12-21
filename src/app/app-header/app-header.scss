@@ -74,7 +74,10 @@
 
 @media screen and (max-width: 425px){
     .header {
+        display: flex;
+        align-items: center;
         position: fixed;
+        height: 50px;
         &-menu {
             display: flex;
             flex-direction: row;
@@ -121,7 +124,7 @@
     .mobile-btn {
         display: flex;
         cursor: pointer;
-        color: black;
+        color: #2F24B5;
         z-index: 10;
     }
 }
