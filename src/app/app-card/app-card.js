@@ -33,7 +33,7 @@ const AppCard = ({product}) => {
                         </div>
                         <div className="modal-block-image">
                             <img src={png2} alt={png2} />
-                            <img src={png3} alt={png3} />
+                            <img id='img2' src={png3} alt={png3} />
                         </div>
                         <div className="modal-block-btn">
                             <a target="blank" href={href}><button className='modal-block-btn-visit' >посетить {visit}</button></a>

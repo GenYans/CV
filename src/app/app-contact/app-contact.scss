@@ -131,11 +131,13 @@
         }
         &-form {
             grid-template-columns: 350px;
-            grid-template-rows: repeat(3, auto);
+            grid-template-rows: repeat(3, 120px);
             margin-left: 0;
             &-block {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-around;
+                height: 118px;
             }
             &-message {
                 margin-left: 0;
