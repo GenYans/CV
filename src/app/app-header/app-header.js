@@ -30,7 +30,7 @@ import Logo from '../../resources/icons/logo.svg';
                             <nav className="main-menu">
                             <ul className={nav ? ['list-inline', 'active'].join(' '): ['list-inline']}>
                                 <li className='list-inline-item'>
-                                    <Link onClick={() => setNav(!nav)}
+                                    <Link onClick={() => setNav(!nav) }
                                         activeClass='active'
                                         to="hello"
                                         spy={true}
@@ -86,7 +86,7 @@ import Logo from '../../resources/icons/logo.svg';
                                     </Link>
                                 </li>
                                 <li className='list-inline-item'>
-                                    <Link onClick={() => setNav(!nav)}
+                                    <Link onClick={() => setNav(!nav)} 
                                     to="contact"
                                     spy={true}
                                     smooth={true}
