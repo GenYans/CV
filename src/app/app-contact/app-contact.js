@@ -24,9 +24,9 @@ const AppContact = () => {
     }
 
     return(
-       <div id='contact' className='contact'>
+       <div className='contact'>
             <div className="container">
-                <div className="contact-wrapper">
+                <div className="contact-wrapper" id='contact'>
                     <div className="contact-about">
                         <div className="contact-about-title">{t("contacts")}</div>
                             <div className="contact-about-descr">{t("contacts_descr")}
@@ -34,8 +34,8 @@ const AppContact = () => {
                     </div>
                     <div className="contact-form">
                         <div className="contact-form-block">
-                            <input className='contact-form-name' type="text" placeholder={t("name")}/>
-                            <input className='contact-form-email' type="text" placeholder="E-mail"/>
+                            <input name='name' className='contact-form-name' type="text" placeholder={t("name")}/>
+                            <input name='email' className='contact-form-email' type="text" placeholder="E-mail"/>
                         </div>
                         <textarea className="contact-form-message" placeholder={t("message")}></textarea>
                     </div>
@@ -46,7 +46,13 @@ const AppContact = () => {
                         <button className='about-btn-contact'>{t("contact_btn")}</button>   
                     </div>  
                 </div>
+                    <div class="modal modal_mini" id="thanks">
+                        <div class="modal__close"></div>
+                        <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+                        <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+                    </div>
             </div>
+            
             <footer className="footer">
                 <div className="container">
                     <div className="footer-wrapper">

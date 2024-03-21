@@ -9,7 +9,6 @@ import AppSkills from './app-skills/app-skills';
 
 
 const App = () => {
-
     return (
         <div className="App">
             <AppHeader/>
@@ -22,6 +21,6 @@ const App = () => {
         </div>
     );
 }
- 
-        
+         
 export default App;
+
