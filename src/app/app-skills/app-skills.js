@@ -15,7 +15,7 @@ const AppSkills = () => {
                 </div>
                     <div className="skills-programm">
                         <div className="skills-programm-block">
-                            <div className="skills-programm-title">Web Development</div>
+                            <div className="skills-programm-title">Веб-разработка</div>
                             <div className="skills-programm-descr">JavaScript, Node.js.</div>
                         </div>
                         <div className="skills-programm-block">
