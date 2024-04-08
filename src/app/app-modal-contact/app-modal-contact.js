@@ -1,5 +1,23 @@
-import '../app-modal-contact/app-modal-contact.scss'
+import '../app-modal-contact/app-modal-contact.scss';
+import $ from 'jquery'
 
+$('form').submit(function(e) {
+    e.preventDefault();
+
+    if (!$(this).valid()) {
+        return;
+    }
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+
+        $('form').trigger('reset');
+    });
+    return false;
+});
 
 const AppModalContact = ({active, setActive, children}) => {
     return(
